@@ -1,27 +1,29 @@
 <h1 align="center">vite-plugin-cli-copy</h1>
-<p align="center">Find if there are duplicate images in your project when building it</p>
+<p align="center">启动项目并自动复制终端的网络url</p>
 
 <p align="center">
 <a href="https://www.npmjs.com/package/vite-plugin-cli-copy" target="__blank"><img src="https://img.shields.io/npm/v/vite-plugin-cli-copy?color=a1b858&label=" alt="NPM version"></a>
 <a href="https://www.npmjs.com/package/vite-plugin-cli-copy" target="__blank"><img alt="NPM Downloads" src="https://img.shields.io/npm/dm/vite-plugin-cli-copy?color=50a36f&label="></a>
 </p>
 
-English | [简体中文](./README.zh_CN.md)
+简体中文 | [English](./README.md)
 
-## Configuration
+## 配置项
 
-| **configuration item name** | **must** | **meaning**                                             | **type**        | **example**                                                      |
-| --------------------------- | -------- | ------------------------------------------------------- | --------------- | ---------------------------------------------------------------- |
-| `imagePath`                 | No       | The image path to be found, default `src/assets/images` | `Array<string>` | `findImageDuplicates({ imagePath: ["src/assets/images", ...] })` |
+| **配置项名称** | **是否必须** | **含义**                                     | **类型**        | **举例**                                                         |
+| -------------- | ------------ | -------------------------------------------- | --------------- | ---------------------------------------------------------------- |
+| `imagePath`    | 否           | 需要查找的图片路径 ,默认 `src/assets/images` | `Array<string>` | `findImageDuplicates({ imagePath: ["src/assets/images", ...] })` |
 
-## Install
+|
+
+## 安装
 
 ```bash
 npm install vite-plugin-cli-copy -D
 pnpm add vite-plugin-cli-copy -D
 ```
 
-## Usage
+## 用法
 
 - vite.config.ts
 
@@ -35,6 +37,6 @@ export default defineConfig({
 })
 ```
 
-## License
+## 许可证
 
 [MIT © wChenonly-latest](./LICENSE)

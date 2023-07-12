@@ -1,0 +1,80 @@
+{
+  "name": "vite-plugin-cli-copy",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@8.6.7",
+  "description": "Start the project and automatically copy the cli network url",
+  "author": "weifan",
+  "license": "ISC",
+  "homepage": "https://github.com/wChenonly/vite-plugin-cli-copy#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wChenonly/vite-plugin-cli-copy.git"
+  },
+  "bugs": "https://github.com/wChenonly/vite-plugin-cli-copy/issues",
+  "keywords": [
+    "vite",
+    "cliCopy"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./dist/index.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild && nr play",
+    "dev": "unbuild --stub",
+    "lint": "eslint .",
+    "play": "nr -C playground dev",
+    "prepublishOnly": "pnpm run build",
+    "release": "bumpp  --commit 'release: vite-plugin-cli-copy v' &&  pnpm publish"
+  },
+  "peerDependencies": {
+    "vite": ">=3"
+  },
+  "dependencies": {
+    "clipboardy": "^3.0.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.39.7",
+    "@antfu/ni": "^0.21.4",
+    "@types/node": "^20.4.1",
+    "bumpp": "^9.1.1",
+    "eslint": "^8.44.0",
+    "nano-staged": "^0.8.0",
+    "picocolors": "^1.0.0",
+    "pnpm": "^8.6.7",
+    "prettier": "^3.0.0",
+    "simple-git-hooks": "^2.8.1",
+    "typescript": "^5.1.6",
+    "unbuild": "^1.2.1",
+    "vite": "^4.4.3"
+  },
+  "nano-staged": {
+    "*.{ts,tsx,js,jsx,vue}": "eslint --fix",
+    "*.{ts,tsx,js,jsx,vue,less,css,md}": "prettier --write"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx nano-staged"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
+}
