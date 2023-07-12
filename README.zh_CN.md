@@ -1,5 +1,5 @@
 <h1 align="center">vite-plugin-cli-copy</h1>
-<p align="center">启动项目并自动复制终端的网络url</p>
+<p align="center">启动项目并自动复制终端的网络 URL</p>
 
 <p align="center">
 <a href="https://www.npmjs.com/package/vite-plugin-cli-copy" target="__blank"><img src="https://img.shields.io/npm/v/vite-plugin-cli-copy?color=a1b858&label=" alt="NPM version"></a>

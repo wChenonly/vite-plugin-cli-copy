@@ -1,5 +1,5 @@
 <h1 align="center">vite-plugin-cli-copy</h1>
-<p align="center">Find if there are duplicate images in your project when building it</p>
+<p align="center">Start the project and automatically copy the terminal's network URL</p>
 
 <p align="center">
 <a href="https://www.npmjs.com/package/vite-plugin-cli-copy" target="__blank"><img src="https://img.shields.io/npm/v/vite-plugin-cli-copy?color=a1b858&label=" alt="NPM version"></a>
