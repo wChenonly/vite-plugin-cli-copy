@@ -39,7 +39,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "unbuild && nr play",
+    "build": "unbuild",
     "dev": "unbuild --stub",
     "lint": "eslint .",
     "play": "nr -C playground dev",
