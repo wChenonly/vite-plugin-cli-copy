@@ -3,7 +3,7 @@ import { Plugin } from 'vite';
 declare function cliCopy(options?: PluginOptions): Plugin;
 interface PluginOptions {
     /**
-     * filter list of shown QR codes. Useful if you have multiple interfaces and only need one
+     * filter list of shown copy codes. Useful if you have multiple interfaces and only need one
      *
      *  examples:
      *    url => url.startsWith('http://192.')

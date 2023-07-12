@@ -8,11 +8,7 @@
 
 English | [简体中文](./README.zh_CN.md)
 
-## Configuration
-
-| **configuration item name** | **must** | **meaning**                                             | **type**        | **example**                                                      |
-| --------------------------- | -------- | ------------------------------------------------------- | --------------- | ---------------------------------------------------------------- |
-| `imagePath`                 | No       | The image path to be found, default `src/assets/images` | `Array<string>` | `findImageDuplicates({ imagePath: ["src/assets/images", ...] })` |
+![](./instructions/copy.jpg)
 
 ## Install
 
