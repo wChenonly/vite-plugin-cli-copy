@@ -37,9 +37,13 @@ import vue from '@vitejs/plugin-vue'
 import cliCopy from 'vite-plugin-cli-copy'
 
 export default defineConfig({
-  plugins: [vue(), cliCopy({})]
+  plugins: [vue(), cliCopy()]
 })
 ```
+
+## Thanks
+
+Great thanks to [@bluwy](https://github.com/bluwy) The project of [vite-plugin-qrcode](https://github.com/svitejs/vite-plugin-qrcode)
 
 ## License
 
