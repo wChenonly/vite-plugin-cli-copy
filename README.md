@@ -19,6 +19,16 @@ pnpm add vite-plugin-cli-copy -D
 
 ## Usage
 
+- package.json
+
+```json
+{
+  "scripts": {
+    "dev": "vite --host"
+  }
+}
+```
+
 - vite.config.ts
 
 ```ts

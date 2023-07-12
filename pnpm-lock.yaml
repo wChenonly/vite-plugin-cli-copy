@@ -30,9 +30,6 @@ importers:
       nano-staged:
         specifier: ^0.8.0
         version: 0.8.0
-      picocolors:
-        specifier: ^1.0.0
-        version: 1.0.0
       pnpm:
         specifier: ^8.6.7
         version: 8.6.7

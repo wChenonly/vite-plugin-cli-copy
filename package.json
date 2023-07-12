@@ -47,7 +47,7 @@
     "release": "bumpp  --commit 'release: vite-plugin-cli-copy v' &&  pnpm publish"
   },
   "peerDependencies": {
-    "vite": ">=3"
+    "vite": "^3.0.0 || ^4.0.0"
   },
   "dependencies": {
     "clipboardy": "^3.0.0"
@@ -59,7 +59,6 @@
     "bumpp": "^9.1.1",
     "eslint": "^8.44.0",
     "nano-staged": "^0.8.0",
-    "picocolors": "^1.0.0",
     "pnpm": "^8.6.7",
     "prettier": "^3.0.0",
     "simple-git-hooks": "^2.8.1",
