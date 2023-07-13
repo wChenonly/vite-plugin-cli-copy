@@ -39,7 +39,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "unbuild && nr play",
+    "build": "unbuild",
+    "test": "nr build && nr play",
     "dev": "unbuild --stub",
     "lint": "eslint .",
     "play": "nr -C playground dev",
@@ -69,6 +70,9 @@
   "nano-staged": {
     "*.{ts,tsx,js,jsx,vue}": "eslint --fix",
     "*.{ts,tsx,js,jsx,vue,less,css,md}": "prettier --write"
+  },
+  "engines": {
+    "node": "^14.18.0 || >=16.0.0"
   },
   "simple-git-hooks": {
     "pre-commit": "npx nano-staged"
